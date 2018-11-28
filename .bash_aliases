@@ -3,3 +3,5 @@ alias tmk='tmux kill-session -t'
 alias tmn='tmux -CC new-session -s'
 
 export GIT_EDITOR=vim
+set -o vi
+shopt -s expand_aliases
