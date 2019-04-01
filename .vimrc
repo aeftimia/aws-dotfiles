@@ -14,9 +14,6 @@ autocmd FileType markdown setlocal wrap
 " Adjust system undo levels
 set undolevels=100
 
-" source the ~.bashrc
-set shell=bash\ --login
-
 " Use system clipboard
 set clipboard=unnamed
 
@@ -31,7 +28,6 @@ set smarttab
 set conceallevel=1
 
 " Number gutter with relative line numbers
-" Relative lines encourage smarter movements in vim
 set number
 set relativenumber
 let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
@@ -94,4 +90,4 @@ nnoremap <silent> <C-w><Right> :<C-u>call <SID>JumpWithWrap('l', 'h')<CR>
 vnoremap <CR> ypo<CR><ESC>mz2kV :'<,'>!bash<CR>`z
 
 " Interactive shell to load aliases and such
-set shell=/bin/bash\ -i
+set shell=/bin/bash\ --login
